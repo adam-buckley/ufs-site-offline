@@ -50,15 +50,6 @@ body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--fo
   border: 1px solid color-mix(in srgb, var(--status) 35%, transparent);
   border-radius: 999px; padding: .35rem .8rem .35rem .65rem;
 }
-.status::before {
-  content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--status);
-  animation: pulse 2.4s ease-out infinite;
-}
-@keyframes pulse {
-  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--status) 45%, transparent); }
-  70%  { box-shadow: 0 0 0 .5rem color-mix(in srgb, var(--status) 0%, transparent); }
-  100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--status) 0%, transparent); }
-}
 @media (prefers-reduced-motion: reduce) { .status::before { animation: none; } }
 h1 { font-size: clamp(1.75rem, 1.2rem + 2.4vw, 2.375rem); line-height: 1.15; font-weight: 600; letter-spacing: -.015em; margin: 0; text-wrap: balance; }
 .message { display: grid; gap: 1rem; }
@@ -81,7 +72,7 @@ footer { font-size: .875rem; color: var(--muted); padding-top: 1.25rem; border-t
     <p>A security issue has been found in PHP, the software our website runs on. We're waiting for our hosting provider to apply the fix, and the site will stay offline until that's done.</p>
     <p>We're sorry for the inconvenience and will be back as soon as we can.</p>
     <!-- EDIT: contact address -->
-    <p>If you need us in the meantime, email <a href="mailto:hello@yoursite.example">hello@yoursite.example</a>.</p>
+    <p>If you need us in the meantime, email <a href="mailto:hello@unitedfitness.com.au">hello@unitedfitness.com.au</a>.</p>
   </div>
 
   <footer>
